@@ -133,7 +133,7 @@ const AudioController = {
   },
 
   renderCurrentItem({ image, name, track, year, group, duration }) {
-    image = !image || image === "" ? "/assets/images/placeholder.jpeg" : image;
+    image = !image || image === "" ? "./assets/images/placeholder.jpeg" : image;
 
     return `<div
               class="current-image"
@@ -237,7 +237,7 @@ const AudioController = {
   },
 
   renderItem({ id, image, track, genre, group, duration }) {
-    image = !image || image === "" ? "/assets/images/placeholder.jpeg" : image;
+    image = !image || image === "" ? "./assets/images/placeholder.jpeg" : image;
 
     return `<div class="item" data-id="${id}">
               <div
